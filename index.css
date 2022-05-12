@@ -1,0 +1,45 @@
+/*CSS Reset*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Comfortaa', cursive;
+}
+
+.intro {
+	background-image: url(https://static.vecteezy.com/system/resources/previews/002/723/895/large_2x/modern-background-with-fluid-shape-pastel-color-and-hand-draw-line-on-blue-pastel-background-flat-minimal-design-free-vector.jpg);
+	background-repeat: no repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: 100%;
+	height: 95vh;
+}
+
+.hello {
+	padding: 10%;
+}
+
+
+.big-font {
+	font-size: 100px;
+}
+
+.profile {
+	display: inline;
+	margin: 25%;
+	border-radius: 150px;
+
+}
+.back-profile {
+	border-color: white;
+	border-width: 10%;
+
+
+}
+
+.bg-light1 {
+		background-color: pi
+}
