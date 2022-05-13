@@ -1,87 +1,216 @@
 <!DOCTYPE html>
 <html>
-	<head>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+			<link rel="stylesheet" type="text/css" href="./index.css">
+			<title>My Portfolio</title>
+
+			<!-- Google Font -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 		
-		<!-- Bootstrap Meta tag -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Bootstrap link -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		</head>
+		<body>
 
-		<title>Portfolio</title>
 
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&display=swap" rel="stylesheet">
-
-		<!-- External CSS -->
-		<link rel="stylesheet" type="text/css" href="./index.css">
-	</head>
-	<body>
-
-	<!-- Navbar -->
-
-	<nav class="navbar navbar-expand-lg navbar-light bg-light1">
+		<nav class="fixed-top navbar navbar-expand-md navbar-dark bg-dark">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">My Portfolio</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <a class="navbar-brand" href="#hello">My Portfolio</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	      <div class="navbar-nav">
-	        <a class="nav-link active" aria-current="page" href="#">Home</a>
-	        <a class="nav-link" href="#">Tools</a>
-	        <a class="nav-link" href="#">About Me</a>
-	        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
-	      </div>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav ms-auto">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#hello">Home</a>
+	        </li>
+	          <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#tools1">Tools</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#aboutme2">About Me</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#contactme1">Contacts</a>
+	        </li>
+	        
+	      </ul>
 	    </div>
 	  </div>
-	</nav>
+		</nav>
 
-	<!-- Navbar -->
-
-	<!-- Front Page -->
-	<div class="intro">
-		<div class="screen row">
-		<div class="hello text-light col-6">
-			<h1 class="big-font">Hello World!</h1>
-			<h2>Presented to you by Coleen Castro</h2>
+		<div class="container-fluid text-white background p-5 text-center" id="hello">
+			<img src="./images/cartman.png" class="img-fluid w-25 rounded-circle p-5 bg-white">
+			<h1 class="hello">Hello World!</h1>
+			<h2 class="presented">Presented by Coleen Castro</h2>
+			<p class="description">Hi! My name is Coleen Castro. I'm aspiring to be a Software engineer living in Cavite, Philippines. I'm currently studying at Zuitt to widen my knowledge about programming. I am also interested in trying to learn C++ and Python.<p>
 		</div>
 
-		<div class="col-6">
-			<div class="back-profile">
-			<img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.6435-9/80027117_3154171704596444_6082857869454082048_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=174925&_nc_ohc=LY6T_Ut1mCsAX_jbKp3&_nc_ht=scontent.fcrk4-1.fna&oh=00_AT9wY5EdF4DjUfIQEWCf2i1rBSHV0FGgwJY6I4Z3dsfEGA&oe=62A0BD20" class="profile img-fluid w-50">
+<!-- done -->
+		<div class="container-fluid p-4" id="tools1">
+
+		    <h3 class="tools text-center">Tools</h3>
+
+		    <!-- START -->
+		    <div class="d-md-flex justify-content-around row">
+
+		        <!-- HTML -->
+		        <div class="col-md-4 text-center">
+		            <img class="img-fluid w-50 " src="./images/html.png">
+		            <h5>HTML</h5>
+		            <p>.</p>
+		        </div>
+		        <!-- HTML -->
+
+		        <!-- CSS -->
+		        <div class="col-md-4 text-center">
+		            <img class="img-fluid w-50" src="./images/css.png">
+		            <h5>CSS</h5>
+		            <p></p>
+		        </div>
+		        <!-- CSS -->
+
+		        <!-- Bootstrap -->
+		        <div class="bootstrap col-md-4 text-center">
+		            <img class="img-fluid w-50" src="./images/bootstrap.png">
+		            <h5>Bootstrap</h5>
+		            <p></p>
+		        </div>
 			</div>
-		</div>
+			</div>
+
+<!-- END -->
+
+
+	<div class="background container-fluid" id="aboutme2">
+	<h1 class="tools text-center" id="aboutme1">About Me</h1>
+	<div class="row">
+	<div class="col-md-6">
+
+	<h2 class="abouttext text-center">Educational Background</h2>
+	<div class="amen row d-none d-md-block mt-md-5 w-100">
+		<div class="offset-md-3 col-md-7">	
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="./images/feu.png" class="d-block w-100" alt="feu">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5 class="text-dark bg-white fw-bold">Far Eastern Universiry</h5>
+			        <p class="bg-white text-dark p-1 rounded">BS in Architecture</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="./images/esps.jpg" class="d-block w-100" alt="esps">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5 class="text-dark bg-white fw-bold">Espiritu Santo Parochial School</h5>
+			        <p class="bg-white bg-gradient text-dark p-1 rounded">Secondary Education</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="./images/joserizal.png" class="d-block w-100" alt="jose">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5 class="text-dark bg-white fw-bold">Jose Rizal Elementary School</h5>
+			        <p class="bg-white text-dark p-1 rounded">Primary School</p>
+			      </div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+			    <span class="carousel-control-next-icon bg-warning" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
 		</div>
 	</div>
-
-	<div>
-		<h1>Skills Overview</h1>
-		<h1>Tools</h1>
-
-		<div class="row">
-			<div class="col-4">
-				<img class="img-fluid" src="./images/html.png">
-				<p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
-			</div>
-
-
-			<div class="col-4">
-				<img class="img-fluid" src="./images/css.png">
-				<p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
-			</div>
-
-			<div class="col-4">
-				<img class="img-fluid" src="./images/bootstrap.png">
-				<p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
-			</div>
-		</div>
 	</div>
 
+			<!-- HTML Start  -->
+
+	<div class=" col-md-6 col-12">
+	<h2 class="text-center header">Achievements</h2>
+	<div class="d-lg-flex justify-content-center p-md-2">
+
+		<!-- HTML Card Start -->
+		<div class="card bg-white col-md-3 m-5 ">
+		  <img src="./images/ciit.jpg" class="card-img-top" alt="html image">
+		  <div class="card-body">
+		    <h5 class="card-title">PHantasya Contest</h5>
+		    <h6 class="card-subtitle text-warning mb-2">4th Place</h6>
+		    <p class="card-text">held at CIIT College</p>
+		    <a href="https://www.facebook.com/ciitphilippines/photos/a.10153203709522069/10153203737217069/" class="btn btn-warning">Link To Project</a>
+		  </div>
+		</div>
+		<!-- HTML End -->
+
+		<!-- Bootstrap Start -->
+		<div class="card bg-white col-md-3 m-5  me-md-5 ms-md-5">
+		  <img src="./images/info.jpg" class="card-img-top" alt="staisabelle">
+		  <div class="card-body">
+		    <h5 class="card-title">Infographics Contest</h5>
+		    <h6 class="card-subtitle text-warning mb-2">3rd Place</h6>
+		    <p class="card-text">held at Sta.Isabelle College.</p>
+		    <a href="https://www.google.com/" class="btn btn-warning">Link To Project</a>
+		  </div>
+		</div>
+		<!-- Bootstrap End -->
+	</div>
+	</div>
+	</div>
+	</div>
+	<!-- contact start -->
 
 
-	<!-- Bootstrap Script -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	</body>
+
+<div class="backgroundcontact" id="contactme1">
+	<div class="container-fluid min-vh-100 p-5">
+		<h2 class="tools text-center text-light">Contact Me @</h2>
+
+		<div class="row mt-2">
+			<form class="col-12 offset-sm-3 offset-md-3 offset-xl-3 col-md-8 col-xl-4 p-3 w-50">
+			  <div class="mb-3">
+			    <label for="name" class="form-label text-light">Name</label>
+			    <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Your Name">
+			  </div>
+			  <div class="mb-2">
+			    <label for="email" class="form-label text-light">Email Address</label>
+			    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+			  </div>
+			  <div class="mb-2">
+			  	<label class="text-light form-label" for="message">Send Me A Message</label>
+			  	<textarea class="form-control" id="message" rows="10"></textarea>
+			  	
+			  </div>
+
+
+			  <button type="submit" class="btn background" formaction="https://www.facebook.com/coleen.castro/">Send Email</button>
+			</form>
+		</div>
+		
+	</div>
+</div>
+
+		
+		     <div class="background p-3 text-center text-white">
+            <p class="m-0 footer">PORTFOLIO BY COLEEN CASTRO / WORK IN PROGRESS</p>
+       		 </div>
+
+
+
+
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		</body>
 </html>

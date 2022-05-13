@@ -1,45 +1,59 @@
 /*CSS Reset*/
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+
+
 
 body {
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	box-sizing: 0;
+	padding: 0;
 }
 
-.intro {
-	background-image: url(https://static.vecteezy.com/system/resources/previews/002/723/895/large_2x/modern-background-with-fluid-shape-pastel-color-and-hand-draw-line-on-blue-pastel-background-flat-minimal-design-free-vector.jpg);
-	background-repeat: no repeat;
+.background {
+	background-image: url(https://t3.ftcdn.net/jpg/03/94/79/36/360_F_394793630_n4mZQY784HGNkh1ch8ymZUO3OqxefDRI.jpg);
 	background-attachment: fixed;
-	background-position: center top;
-	background-size: 100%;
-	height: 95vh;
+}
+	
+
+.hello	{
+	color: #9c89b8;
 }
 
-.hello {
-	padding: 10%;
+.presented {
+	color: #F0A6CA
 }
 
-
-.big-font {
-	font-size: 100px;
+.description {
+	color: #9c89b8;
+	font-size: 20px;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
-.profile {
-	display: inline;
-	margin: 25%;
-	border-radius: 150px;
-
-}
-.back-profile {
-	border-color: white;
-	border-width: 10%;
-
-
+.tools {
+	font-size: 50px;
 }
 
-.bg-light1 {
-		background-color: pi
+.header {
+	font-size:30px;
+}
+
+.toolimage div {
+	vertical-align: top;
+}
+
+.backgroundcontact {
+	background-color: #F08080;
+}
+
+.achieve {
+	margin-top: 10%;
+}
+
+.bootstrap {
+	margin-top: 2.5%;
+}
+
+.footer {
+	color: #F08080;
 }
